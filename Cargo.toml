@@ -1,0 +1,21 @@
+[package]
+name = "yarams"
+version = "0.1.0"
+edition = "2023"
+description = "Cross-platform filesystem monitor and malware scanner using YARA rules."
+authors = ["Srikar <srikarbabu03@gmail.com"]
+license = "GPL-3.0"
+repository = "https://github.com/srikarbabu1/yarams"
+
+[dependencies]
+clap = {version = "3.2.17", features = ["derive"]}
+log = "0.4.17"
+notify = "4.0.17"
+num_cpus = "1.13.1"
+pretty_env_logger = "0.4.0"
+serde = { version = "1.0.143", features = ["derive"] }
+serde_json = "1.0.83"
+threadpool = "1.8.1"
+walkdir = "2.3.2"
+yara = { version = "0.15.0" }
+yara-sys = { version = "0.15.0", features = ["vendored"]}
